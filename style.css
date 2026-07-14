@@ -1,0 +1,16 @@
+
+html,body{margin:0;height:100%;background:#090909;color:#fff;font-family:Arial;overflow:hidden}
+.bg{position:fixed;inset:0;background:
+radial-gradient(circle at 20% 20%,#3335,transparent 25%),
+radial-gradient(circle at 80% 70%,#4444,transparent 30%),
+linear-gradient(#111,#050505);
+filter:blur(10px);transition:.8s}
+#overlay{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(10px);background:#0006;cursor:pointer;z-index:10;transition:.8s}
+#heart{font-size:46px;animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.5;transform:scale(1.08)}}
+.card{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;background:#ffffff10;backdrop-filter:blur(20px);padding:40px;border-radius:24px;opacity:0;transition:.6s;width:420px}
+button{padding:12px 26px;border-radius:99px;background:#ffffff15;color:#fff;border:1px solid #ffffff25;cursor:pointer;transition:.3s}
+button:hover{background:#fff;color:#111;transform:translateY(-2px) scale(1.04)}
+#about{max-height:0;overflow:hidden;opacity:0;transition:.6s}
+#about.show{max-height:600px;opacity:1}
+#views{position:fixed;left:18px;bottom:14px;color:#ddd;font-size:14px}
